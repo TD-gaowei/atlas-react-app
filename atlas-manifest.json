@@ -1,0 +1,13 @@
+{
+  "id": "__ATLAS_APP_SLUG__-dev-app-id",
+  "name": "__ATLAS_APP_SLUG__",
+  "version": "0.0.0",
+  "sdk-version": "0",
+  "capabilities": ["authorization"],
+  "scopes": ["openid"],
+  "assets": {
+    "icon": "https://cdn1.iconfinder.com/data/icons/miscicons/500/globe-512.png"
+  },
+  "src": "http://localhost:3000",
+  "slug": "__ATLAS_APP_SLUG__"
+}

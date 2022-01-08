@@ -1,0 +1,43 @@
+{
+  "name": "atlas-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@atlas/cli": "^1.17.0",
+    "@atlas/sdk": "^0.19.0",
+    "@cobalt/cobalt-react-components": "^28.13.0",
+    "@cobalt/react-theme-provider": "^2.1.4",
+    "axios": "^0.19.2",
+    "concurrently": "^5.3.0",
+    "i18next": "^19.9.2",
+    "i18next-icu": "^1.4.2",
+    "i18next-xhr-backend": "^3.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.15.3",
+    "react-scripts": "5.0.0"
+  },
+  "scripts": {
+    "start": "concurrently -k npm:start:*",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:atlas": "atlas launch --config=./atlas-dev-configuration.json --app-manifest=./atlas-manifest.json --menu-definition=./menu-definition.json",
+    "start:app": "BROWSER=none react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
