@@ -5,6 +5,8 @@ import AtlasSdk from "@atlas/sdk";
 import TokenGenerator from "./config/token.generator";
 import HttpClient from "./config/http.client";
 import configI18n from "./config/i18n";
+import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
+import { history } from "./config/routeController";
 
 async function start() {
   AtlasSdk.lifecycle.onLaunch(async () => {
@@ -15,7 +17,12 @@ async function start() {
     const { apiGatewayUrl } = await AtlasSdk.environment.getConfig();
     HttpClient.initialize(apiGatewayUrl);
 
-    ReactDOM.render(<App />, document.getElementById("root"));
+    ReactDOM.render(
+      <HistoryRouter history={history}>
+        <App />
+      </HistoryRouter>,
+      document.getElementById("root")
+    );
   });
 
   TokenGenerator.initialize(() => AtlasSdk.authorization.getAccessToken());

@@ -1,0 +1,11 @@
+{
+  "authentication": {
+    "id": "88230ea884b646a7821d3fa97bdf190f",
+    "secret": "rjqntEuTfymMiPuA5-oRFXx9U_F4MjqW0ek0r0T0MsSEw6cqe_Xi1iraCoxP6nu8ajTLcDKQQB-YQOfab1j1-A",
+    "privateKey": "MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgdiYOtuSybfeGb3zCceVy5zB3swHnPHVPHON/kiENAZOhRANCAATVroQ+AkLem/Nbto/lpTpJEFnfD37mwk/zYu3EMbq9AzeJA+UQnszY+aZ5nFjSVqCBq5wYvmPKPrfTnhT3ZL4m",
+    "clientKeyId": "ba7a6c873abb43cba7e908be6bc92861",
+    "clientKeyAlgorithm": "ES256",
+    "talkdeskIdBaseUrl": "talkdeskstgid.com",
+    "account": "email-test"
+  }
+}
