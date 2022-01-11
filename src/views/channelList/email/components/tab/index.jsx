@@ -5,7 +5,7 @@ import Tab from "@cobalt/react-tab";
 import { useLocation } from "react-router";
 import PropTypes from "prop-types";
 
-export const FnTab = ({ tabs, tabMap }) => {
+export const FnTab = ({ tabs = [], tabMap = {} }) => {
   const location = useLocation();
 
   const [selectedTab, setSelectedTab] = useState("");
@@ -35,4 +35,5 @@ FnTab.propTypes = {
       path: PropTypes.string.isRequired,
     })
   ),
+  tabMap: PropTypes.object.isRequired,
 };

@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "concurrently -k npm:start:*",
-    "build": "react-scripts build",
+    "build": "craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:atlas": "atlas launch -h localhost --config=./atlas-dev-configuration.json --app-manifest=./atlas-manifest.json --menu-definition=./menu-definition.json",

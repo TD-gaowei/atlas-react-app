@@ -1,20 +1,27 @@
 import { routePaths } from "@/routes/routePaths";
 
+const CHANNEL_TYPE = {
+  email: "Email",
+  chat: "Chat",
+  sms: "Sms",
+  facebook: "Facebook",
+};
+
 export const CHANNELS = [
   {
-    name: "Email",
+    name: CHANNEL_TYPE.email,
     path: routePaths.email,
   },
   {
-    name: "Chat",
+    name: CHANNEL_TYPE.chat,
     path: routePaths.livechat,
   },
   {
-    name: "SMS",
+    name: CHANNEL_TYPE.sms,
     path: routePaths.sms,
   },
   {
-    name: "Facebook",
+    name: CHANNEL_TYPE.facebook,
     path: routePaths.facebook,
   },
 ];
