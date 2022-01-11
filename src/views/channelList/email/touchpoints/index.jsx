@@ -17,6 +17,7 @@ const Touchpoints = () => {
       <Divider />
       this is email touchpoint component!
       <Button
+        size="small"
         onClick={() => navigate("/channels/email/touchpoints/123/touchpoint")}
       >
         touchpoint

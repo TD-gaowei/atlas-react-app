@@ -1,5 +1,7 @@
+import Flex from "@cobalt/react-flex";
+
 const Facebook = () => {
-  return <div>this is Facebook component!</div>;
+  return <Flex>this is Facebook component!</Flex>;
 };
 
 export default Facebook;

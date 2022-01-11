@@ -3,7 +3,7 @@ import { routePaths } from "../../../../../routes/routePaths";
 import Flex from "@cobalt/react-flex";
 import Icon from "@cobalt/react-icon";
 
-const EmailItem = () => {
+const TouchpointItem = () => {
   const navigate = useNavigate();
 
   return (
@@ -20,4 +20,4 @@ const EmailItem = () => {
   );
 };
 
-export default EmailItem;
+export default TouchpointItem;

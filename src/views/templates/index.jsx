@@ -1,5 +1,7 @@
+import Flex from "@cobalt/react-flex";
+
 const Templates = () => {
-  return <div>this is Templates component!</div>;
+  return <Flex>this is Templates component!</Flex>;
 };
 
 export default Templates;

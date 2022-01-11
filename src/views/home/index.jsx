@@ -6,6 +6,7 @@ import { routePaths } from "../../routes/routePaths";
 import { Link } from "react-router-dom";
 import { Outlet, useLocation } from "react-router";
 import Divider from "@cobalt/react-divider";
+import { features } from "../../features";
 
 const tabs = [
   {
@@ -19,7 +20,7 @@ const tabs = [
   {
     name: "Global Settings",
     path: routePaths.globalSettings,
-    hidden: false,
+    hidden: features.isActive("DCE_channels_global_settings"),
   },
 ].filter((tab) => !tab.hidden);
 

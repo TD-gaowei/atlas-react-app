@@ -1,6 +1,7 @@
 import { routePaths } from "./routePaths";
 import { Navigate } from "react-router";
 import { load } from "./utils";
+import { features } from "../features";
 
 export const routes = [
   {
@@ -22,13 +23,13 @@ export const routes = [
       {
         path: routePaths.globalSettings,
         element: load("globalSettings"),
-        hidden: true,
+        hidden: features.isActive("DCE_channels_global_settings"),
       },
-    ],
+    ].filter((route) => !route.hidden),
   },
   {
     path: routePaths.email,
-    element: <Navigate to={"/channels/email/touchpoints"} />,
+    element: <Navigate to="/channels/email/touchpoints" />,
   },
   {
     path: "/channels/email/touchpoints",
@@ -62,4 +63,5 @@ export const routes = [
     path: routePaths.livechat,
     element: load("channelList/livechat"),
   },
-];
+  { path: "*", element: <>404 error page</> },
+].filter((route) => !route.hidden);

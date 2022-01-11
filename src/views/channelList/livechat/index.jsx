@@ -1,5 +1,7 @@
+import Flex from "@cobalt/react-flex";
+
 const LiveChat = () => {
-  return <div>this is LiveChat component!</div>;
+  return <Flex>this is LiveChat component!</Flex>;
 };
 
 export default LiveChat;

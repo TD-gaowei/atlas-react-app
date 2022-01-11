@@ -1,5 +1,7 @@
+import Flex from "@cobalt/react-flex";
+
 const Sms = () => {
-  return <div>this is Sms component!</div>;
+  return <Flex>this is Sms component!</Flex>;
 };
 
 export default Sms;
