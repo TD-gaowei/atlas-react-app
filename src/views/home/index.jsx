@@ -3,10 +3,10 @@ import Flex from "@cobalt/react-flex";
 import { Heading } from "@cobalt/react-typography";
 import { useEffect, useState } from "react";
 import { routePaths } from "@/routes/routePaths";
-import { Link } from "react-router-dom";
-import { Outlet, useLocation } from "react-router";
+import { Outlet, useLocation, useNavigate } from "react-router";
 import Divider from "@cobalt/react-divider";
 import { features } from "@/features";
+import { useTheme } from "@cobalt/react-theme-provider";
 
 const tabs = [
   {
@@ -32,9 +32,15 @@ const tabMap = {
 
 const Home = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  const theme = useTheme();
+
   const [selectedTab, setSelectedTab] = useState("");
 
-  const handleSelectTab = (tab) => () => setSelectedTab(tab.name);
+  const handleSelectTab = (tab) => () => {
+    navigate(tab.path);
+    setSelectedTab(tab.name);
+  };
 
   useEffect(() => {
     setSelectedTab(tabMap[location.pathname]);
@@ -47,13 +53,15 @@ const Home = () => {
       </Flex>
       <Flex paddingX={6}>
         {tabs.map((tab) => (
-          <Flex alignX={1} paddingX={1}>
+          <Flex alignX={1} paddingX={1} key={tab.name}>
             <Tab
-              key={tab.name}
               onClick={handleSelectTab(tab)}
               active={selectedTab === tab.name}
+              style={{
+                color: selectedTab === tab.name ? theme.primary600 : "inherit",
+              }}
             >
-              <Link to={tab.path}>{tab.name}</Link>
+              {tab.name}
             </Tab>
           </Flex>
         ))}

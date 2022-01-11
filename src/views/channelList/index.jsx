@@ -11,7 +11,7 @@ const ChannelList = () => {
       <Flex>
         <List>
           {CHANNELS.map((channel) => (
-            <Item>
+            <Item key={channel.path}>
               <Link to={channel.path}>{channel.name}</Link>
             </Item>
           ))}

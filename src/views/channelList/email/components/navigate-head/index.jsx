@@ -1,5 +1,5 @@
 import { routePaths } from "@/routes/routePaths";
-import React from "react";
+import React, { useCallback } from "react";
 import Flex from "@cobalt/react-flex";
 import Icon from "@cobalt/react-icon";
 import { useNavigate } from "react-router";
@@ -8,7 +8,10 @@ import { Heading } from "@cobalt/react-typography";
 export const NavigateHead = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => navigate(routePaths.channels);
+  const handleClick = useCallback(
+    () => navigate(routePaths.channels),
+    [navigate]
+  );
 
   return (
     <Flex paddingX={6} paddingY={6} alignY="center">

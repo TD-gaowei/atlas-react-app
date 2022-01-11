@@ -1,9 +1,9 @@
 import { routePaths } from "./routePaths";
 import { Navigate } from "react-router";
-import { load } from "./utils";
+import { formatRoute, load } from "./utils";
 import { features } from "@/features";
 
-export const routes = [
+const routes = [
   {
     path: routePaths.root,
     element: load("home"),
@@ -25,7 +25,7 @@ export const routes = [
         element: load("globalSettings"),
         hidden: features.isActive("DCE_channels_global_settings"),
       },
-    ].filter((route) => !route.hidden),
+    ],
   },
   {
     path: routePaths.email,
@@ -64,4 +64,6 @@ export const routes = [
     element: load("channelList/livechat"),
   },
   { path: "*", element: <>404 error page</> },
-].filter((route) => !route.hidden);
+];
+
+export default formatRoute(routes, { flag: "hidden" });

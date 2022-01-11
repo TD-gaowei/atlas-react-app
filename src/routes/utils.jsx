@@ -9,3 +9,20 @@ export const load = (view) => {
     </Suspense>
   );
 };
+
+export function formatRoute(routes, { flag }) {
+  return routes.reduce((acc, cur) => {
+    if (Array.isArray(cur.children)) {
+      acc.push({
+        ...cur,
+        children: formatRoute(cur.children, { flag }),
+      });
+    } else {
+      if (!cur[flag]) {
+        acc.push(cur);
+      }
+    }
+
+    return acc;
+  }, []);
+}

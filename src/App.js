@@ -4,7 +4,7 @@ import CobaltRoot from "@cobalt/cobalt-react-components";
 import ThemeProvider from "@cobalt/react-theme-provider";
 import { useRoutes } from "react-router";
 import ViewportProvider from "@cobalt/react-viewport-provider";
-import { routes } from "./routes";
+import routes from "./routes";
 
 import {
   listenToAtlasPathChange,
