@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import { routePaths } from "../../../../../routes/routePaths";
+import { routePaths } from "@/routes/routePaths";
 import Flex from "@cobalt/react-flex";
 import Icon from "@cobalt/react-icon";
 

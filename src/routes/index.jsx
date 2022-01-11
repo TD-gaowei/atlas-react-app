@@ -1,7 +1,7 @@
 import { routePaths } from "./routePaths";
 import { Navigate } from "react-router";
 import { load } from "./utils";
-import { features } from "../features";
+import { features } from "@/features";
 
 export const routes = [
   {

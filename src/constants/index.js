@@ -1,4 +1,4 @@
-import { routePaths } from "../routes/routePaths";
+import { routePaths } from "@/routes/routePaths";
 
 export const CHANNELS = [
   {

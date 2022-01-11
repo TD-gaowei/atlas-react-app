@@ -1,6 +1,6 @@
 import Icon from "@cobalt/react-icon";
 import { useNavigate, useParams } from "react-router";
-import { routePaths } from "../../../../../routes/routePaths";
+import { routePaths } from "@/routes/routePaths";
 import Flex from "@cobalt/react-flex";
 import React from "react";
 import { Heading, Text } from "@cobalt/react-typography";

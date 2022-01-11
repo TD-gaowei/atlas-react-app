@@ -2,11 +2,11 @@ import Tab from "@cobalt/react-tab";
 import Flex from "@cobalt/react-flex";
 import { Heading } from "@cobalt/react-typography";
 import { useEffect, useState } from "react";
-import { routePaths } from "../../routes/routePaths";
+import { routePaths } from "@/routes/routePaths";
 import { Link } from "react-router-dom";
 import { Outlet, useLocation } from "react-router";
 import Divider from "@cobalt/react-divider";
-import { features } from "../../features";
+import { features } from "@/features";
 
 const tabs = [
   {

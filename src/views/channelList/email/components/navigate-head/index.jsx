@@ -1,4 +1,4 @@
-import { routePaths } from "../../../../../routes/routePaths";
+import { routePaths } from "@/routes/routePaths";
 import React from "react";
 import Flex from "@cobalt/react-flex";
 import Icon from "@cobalt/react-icon";
