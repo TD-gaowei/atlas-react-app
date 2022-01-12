@@ -1,11 +1,13 @@
 import React from 'react';
+
+import Divider from '@cobalt/react-divider';
+import Flex from '@cobalt/react-flex';
+
+import { tabMap, tabs } from '../common';
 import { NavigateHead } from '../components/navigate-head';
 import { FnTab } from '../components/tab';
-import { tabMap, tabs } from '../common';
-import Flex from '@cobalt/react-flex';
-import Divider from '@cobalt/react-divider';
 
-const Settings = () => {
+function Settings() {
   return (
     <Flex direction="column">
       <NavigateHead />
@@ -14,6 +16,6 @@ const Settings = () => {
       this is email settings component!
     </Flex>
   );
-};
+}
 
 export default Settings;

@@ -1,6 +1,8 @@
-import { routePaths } from './routePaths';
 import { Navigate } from 'react-router';
+
+import { routePaths } from './routePaths';
 import { formatRoute, load } from './utils';
+
 import { features } from '@/features';
 
 const routes = [

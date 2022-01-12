@@ -1,7 +1,7 @@
 import Flex from '@cobalt/react-flex';
 
-const GlobalSettings = () => {
+function GlobalSettings() {
   return <Flex>this is GlobalSettings component!</Flex>;
-};
+}
 
 export default GlobalSettings;

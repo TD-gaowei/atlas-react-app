@@ -1,13 +1,15 @@
 import React from 'react';
-import Divider from '@cobalt/react-divider';
-import { NavigateHead } from '../components/navigate-head';
-import { FnTab } from '../components/tab';
-import Button from '@cobalt/react-button';
 import { useNavigate } from 'react-router';
-import { tabMap, tabs } from '../common';
+
+import Button from '@cobalt/react-button';
+import Divider from '@cobalt/react-divider';
 import Flex from '@cobalt/react-flex';
 
-const Touchpoints = () => {
+import { tabMap, tabs } from '../common';
+import { NavigateHead } from '../components/navigate-head';
+import { FnTab } from '../components/tab';
+
+function Touchpoints() {
   const navigate = useNavigate();
 
   return (
@@ -24,6 +26,6 @@ const Touchpoints = () => {
       </Button>
     </Flex>
   );
-};
+}
 
 export default Touchpoints;

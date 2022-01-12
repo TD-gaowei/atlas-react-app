@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import HttpClient from '@/config/http.client';
 
 export function useCurrentUser() {
@@ -10,7 +11,7 @@ export function useCurrentUser() {
       setUser(data);
     }
 
-    updateUser();
+    void updateUser();
   }, []);
 
   return user;

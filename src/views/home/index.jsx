@@ -1,12 +1,14 @@
-import Tab from '@cobalt/react-tab';
-import Flex from '@cobalt/react-flex';
-import { Heading } from '@cobalt/react-typography';
 import { useEffect, useState } from 'react';
-import { routePaths } from '@/routes/routePaths';
 import { Outlet, useLocation, useNavigate } from 'react-router';
+
 import Divider from '@cobalt/react-divider';
-import { features } from '@/features';
+import Flex from '@cobalt/react-flex';
+import Tab from '@cobalt/react-tab';
 import { useTheme } from '@cobalt/react-theme-provider';
+import { Heading } from '@cobalt/react-typography';
+
+import { features } from '@/features';
+import { routePaths } from '@/routes/routePaths';
 
 const tabs = [
   {
@@ -30,7 +32,7 @@ const tabMap = {
   [routePaths.globalSettings]: 'Global Settings',
 };
 
-const Home = () => {
+function Home() {
   const location = useLocation();
   const navigate = useNavigate();
   const theme = useTheme();
@@ -72,6 +74,6 @@ const Home = () => {
       </Flex>
     </>
   );
-};
+}
 
 export default Home;

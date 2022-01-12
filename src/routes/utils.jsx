@@ -4,7 +4,7 @@ export const load = (view) => {
   const Component = lazy(() => import(`../views/${view}`));
 
   return (
-    <Suspense fallback={<></>}>
+    <Suspense fallback={<>loading...</>}>
       <Component />
     </Suspense>
   );
@@ -17,10 +17,8 @@ export function formatRoute(routes, { flag }) {
         ...cur,
         children: formatRoute(cur.children, { flag }),
       });
-    } else {
-      if (!cur[flag]) {
-        acc.push(cur);
-      }
+    } else if (!cur[flag]) {
+      acc.push(cur);
     }
 
     return acc;

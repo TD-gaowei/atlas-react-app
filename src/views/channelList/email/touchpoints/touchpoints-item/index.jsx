@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router';
-import { routePaths } from '@/routes/routePaths';
+
 import Flex from '@cobalt/react-flex';
 import Icon from '@cobalt/react-icon';
 
-const TouchpointItem = () => {
+import { routePaths } from '@/routes/routePaths';
+
+function TouchpointItem() {
   const navigate = useNavigate();
 
   return (
@@ -18,6 +20,6 @@ const TouchpointItem = () => {
       />
     </Flex>
   );
-};
+}
 
 export default TouchpointItem;

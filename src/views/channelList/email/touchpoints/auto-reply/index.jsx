@@ -1,14 +1,17 @@
-import Icon from '@cobalt/react-icon';
-import { useNavigate, useParams } from 'react-router';
-import { routePaths } from '@/routes/routePaths';
-import Flex from '@cobalt/react-flex';
 import React from 'react';
-import { Heading, Text } from '@cobalt/react-typography';
-import { FnTab } from '../../components/tab';
+import { useNavigate, useParams } from 'react-router';
+
 import Divider from '@cobalt/react-divider';
+import Flex from '@cobalt/react-flex';
+import Icon from '@cobalt/react-icon';
+import { Heading, Text } from '@cobalt/react-typography';
+
+import { FnTab } from '../../components/tab';
 import { useTabs } from '../../hooks/useTabs';
 
-const AutoReply = () => {
+import { routePaths } from '@/routes/routePaths';
+
+function AutoReply() {
   const navigate = useNavigate();
   const { id } = useParams();
   const { tabs: touchpointTabs, touchpointMap } = useTabs(id);
@@ -35,6 +38,6 @@ const AutoReply = () => {
       this is EmailItem component!
     </Flex>
   );
-};
+}
 
 export default AutoReply;

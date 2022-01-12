@@ -1,15 +1,16 @@
 import React from 'react';
+import { useRoutes } from 'react-router';
 import AtlasSdk from '@atlas/sdk';
+
 import CobaltRoot from '@cobalt/cobalt-react-components';
 import ThemeProvider from '@cobalt/react-theme-provider';
-import { useRoutes } from 'react-router';
 import ViewportProvider from '@cobalt/react-viewport-provider';
-import routes from './routes';
 
 import {
   listenToAtlasPathChange,
   listenToUsersPathChange,
 } from './config/routeController';
+import routes from './routes';
 
 listenToAtlasPathChange();
 listenToUsersPathChange();
