@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import AtlasSdk from "@atlas/sdk";
-import TokenGenerator from "./config/token.generator";
-import HttpClient from "./config/http.client";
-import configI18n from "./config/i18n";
-import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
-import { history } from "./config/routeController";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import AtlasSdk from '@atlas/sdk';
+import TokenGenerator from './config/token.generator';
+import HttpClient from './config/http.client';
+import configI18n from './config/i18n';
+import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom';
+import { history } from './config/routeController';
 
 async function start() {
   AtlasSdk.lifecycle.onLaunch(async () => {
@@ -21,7 +21,7 @@ async function start() {
       <HistoryRouter history={history}>
         <App />
       </HistoryRouter>,
-      document.getElementById("root")
+      document.getElementById('root')
     );
   });
 

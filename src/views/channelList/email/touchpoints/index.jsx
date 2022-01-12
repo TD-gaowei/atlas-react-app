@@ -1,11 +1,11 @@
-import React from "react";
-import Divider from "@cobalt/react-divider";
-import { NavigateHead } from "../components/navigate-head";
-import { FnTab } from "../components/tab";
-import Button from "@cobalt/react-button";
-import { useNavigate } from "react-router";
-import { tabMap, tabs } from "../common";
-import Flex from "@cobalt/react-flex";
+import React from 'react';
+import Divider from '@cobalt/react-divider';
+import { NavigateHead } from '../components/navigate-head';
+import { FnTab } from '../components/tab';
+import Button from '@cobalt/react-button';
+import { useNavigate } from 'react-router';
+import { tabMap, tabs } from '../common';
+import Flex from '@cobalt/react-flex';
 
 const Touchpoints = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const Touchpoints = () => {
       this is email touchpoint component!
       <Button
         size="small"
-        onClick={() => navigate("/channels/email/touchpoints/123/touchpoint")}
+        onClick={() => navigate('/channels/email/touchpoints/123/touchpoint')}
       >
         touchpoint
       </Button>

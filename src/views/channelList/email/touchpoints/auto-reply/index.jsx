@@ -1,12 +1,12 @@
-import Icon from "@cobalt/react-icon";
-import { useNavigate, useParams } from "react-router";
-import { routePaths } from "@/routes/routePaths";
-import Flex from "@cobalt/react-flex";
-import React from "react";
-import { Heading, Text } from "@cobalt/react-typography";
-import { FnTab } from "../../components/tab";
-import Divider from "@cobalt/react-divider";
-import { useTabs } from "../../hooks/useTabs";
+import Icon from '@cobalt/react-icon';
+import { useNavigate, useParams } from 'react-router';
+import { routePaths } from '@/routes/routePaths';
+import Flex from '@cobalt/react-flex';
+import React from 'react';
+import { Heading, Text } from '@cobalt/react-typography';
+import { FnTab } from '../../components/tab';
+import Divider from '@cobalt/react-divider';
+import { useTabs } from '../../hooks/useTabs';
 
 const AutoReply = () => {
   const navigate = useNavigate();

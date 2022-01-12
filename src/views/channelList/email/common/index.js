@@ -1,15 +1,15 @@
 export const tabs = [
   {
-    name: "Touchpoints",
-    path: "/channels/email/touchpoints",
+    name: 'Touchpoints',
+    path: '/channels/email/touchpoints',
   },
   {
-    name: "Settings",
-    path: "/channels/email/settings",
+    name: 'Settings',
+    path: '/channels/email/settings',
   },
 ];
 
 export const tabMap = {
-  "/channels/email/touchpoints": "Touchpoints",
-  "/channels/email/settings": "Settings",
+  '/channels/email/touchpoints': 'Touchpoints',
+  '/channels/email/settings': 'Settings',
 };

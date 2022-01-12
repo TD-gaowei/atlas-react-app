@@ -4,7 +4,7 @@ class TokenGenerator {
   }
 
   get() {
-    throw new Error("Token generator was not initialized");
+    throw new Error('Token generator was not initialized');
   }
 }
 

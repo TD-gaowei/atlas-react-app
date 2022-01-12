@@ -1,10 +1,10 @@
-import AtlasSdk from "@atlas/sdk";
-import { routePaths } from "../routes/routePaths";
-import { createBrowserHistory } from "history";
+import AtlasSdk from '@atlas/sdk';
+import { routePaths } from '../routes/routePaths';
+import { createBrowserHistory } from 'history';
 
 export const history = createBrowserHistory();
 
-export const updateAppPath = ({ path, search = "", state }) => {
+export const updateAppPath = ({ path, search = '', state }) => {
   return history.push(path);
 };
 

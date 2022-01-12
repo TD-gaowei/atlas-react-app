@@ -1,9 +1,9 @@
-import { routePaths } from "@/routes/routePaths";
-import React, { useCallback } from "react";
-import Flex from "@cobalt/react-flex";
-import Icon from "@cobalt/react-icon";
-import { useNavigate } from "react-router";
-import { Heading } from "@cobalt/react-typography";
+import { routePaths } from '@/routes/routePaths';
+import React, { useCallback } from 'react';
+import Flex from '@cobalt/react-flex';
+import Icon from '@cobalt/react-icon';
+import { useNavigate } from 'react-router';
+import { Heading } from '@cobalt/react-typography';
 
 export const NavigateHead = () => {
   const navigate = useNavigate();

@@ -1,14 +1,14 @@
-import { useMemo } from "react";
+import { useMemo } from 'react';
 
 export const useTabs = (id) => {
   const tabs = useMemo(
     () => [
       {
-        name: "Touchpoint",
+        name: 'Touchpoint',
         path: `/channels/email/touchpoints/${id}/touchpoint`,
       },
       {
-        name: "Auto-reply",
+        name: 'Auto-reply',
         path: `/channels/email/touchpoints/${id}/autoReply`,
       },
     ],
@@ -17,8 +17,8 @@ export const useTabs = (id) => {
 
   const touchpointMap = useMemo(
     () => ({
-      [`/channels/email/touchpoints/${id}/touchpoint`]: "Touchpoint",
-      [`/channels/email/touchpoints/${id}/autoReply`]: "Auto-reply",
+      [`/channels/email/touchpoints/${id}/touchpoint`]: 'Touchpoint',
+      [`/channels/email/touchpoints/${id}/autoReply`]: 'Auto-reply',
     }),
     [id]
   );

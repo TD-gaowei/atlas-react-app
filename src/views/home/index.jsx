@@ -1,33 +1,33 @@
-import Tab from "@cobalt/react-tab";
-import Flex from "@cobalt/react-flex";
-import { Heading } from "@cobalt/react-typography";
-import { useEffect, useState } from "react";
-import { routePaths } from "@/routes/routePaths";
-import { Outlet, useLocation, useNavigate } from "react-router";
-import Divider from "@cobalt/react-divider";
-import { features } from "@/features";
-import { useTheme } from "@cobalt/react-theme-provider";
+import Tab from '@cobalt/react-tab';
+import Flex from '@cobalt/react-flex';
+import { Heading } from '@cobalt/react-typography';
+import { useEffect, useState } from 'react';
+import { routePaths } from '@/routes/routePaths';
+import { Outlet, useLocation, useNavigate } from 'react-router';
+import Divider from '@cobalt/react-divider';
+import { features } from '@/features';
+import { useTheme } from '@cobalt/react-theme-provider';
 
 const tabs = [
   {
-    name: "Channels list",
+    name: 'Channels list',
     path: routePaths.channels,
   },
   {
-    name: "Templates",
+    name: 'Templates',
     path: routePaths.templates,
   },
   {
-    name: "Global Settings",
+    name: 'Global Settings',
     path: routePaths.globalSettings,
-    hidden: features.isActive("DCE_channels_global_settings"),
+    hidden: features.isActive('DCE_channels_global_settings'),
   },
 ].filter((tab) => !tab.hidden);
 
 const tabMap = {
-  [routePaths.channels]: "Channels list",
-  [routePaths.templates]: "Templates",
-  [routePaths.globalSettings]: "Global Settings",
+  [routePaths.channels]: 'Channels list',
+  [routePaths.templates]: 'Templates',
+  [routePaths.globalSettings]: 'Global Settings',
 };
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
   const navigate = useNavigate();
   const theme = useTheme();
 
-  const [selectedTab, setSelectedTab] = useState("");
+  const [selectedTab, setSelectedTab] = useState('');
 
   const handleSelectTab = (tab) => () => {
     navigate(tab.path);
@@ -58,7 +58,7 @@ const Home = () => {
               onClick={handleSelectTab(tab)}
               active={selectedTab === tab.name}
               style={{
-                color: selectedTab === tab.name ? theme.primary600 : "inherit",
+                color: selectedTab === tab.name ? theme.primary600 : 'inherit',
               }}
             >
               {tab.name}
