@@ -1,6 +1,6 @@
 {
   "name": "atlas-react-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@atlas/cli": "^1.17.0",
@@ -38,7 +38,8 @@
     "start:atlas": "atlas launch -h localhost --config=./atlas-dev-configuration.json --app-manifest=./atlas-manifest.json --menu-definition=./menu-definition.json",
     "start:app": "BROWSER=none craco start",
     "prettier": "prettier -w ./src",
-    "lint": "eslint --fix --ext .js,.jsx ./src"
+    "lint": "eslint --fix --ext .js,.jsx ./src",
+    "release:patch": "standard-version -t '' --no-verify --release-as patch"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -64,6 +65,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "^2.5.1",
-    "sass": "^1.47.0"
+    "sass": "^1.47.0",
+    "standard-version": "^9.3.2"
   }
 }
