@@ -31,6 +31,7 @@ module.exports = {
     'implicit-arrow-linebreak': 0,
     indent: 0,
     'no-void': 0,
+    'consistent-return': 0,
 
     // react
     'react/jsx-filename-extension': [
@@ -41,6 +42,7 @@ module.exports = {
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
     'react/forbid-prop-types': 0,
+    'react/jsx-props-no-spreading': 0,
 
     // import
     'import/no-unresolved': 0,

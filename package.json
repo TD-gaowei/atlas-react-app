@@ -11,6 +11,8 @@
     "@cobalt/react-flex": "^1.4.5",
     "@cobalt/react-icon": "^1.17.0",
     "@cobalt/react-list": "^1.1.7",
+    "@cobalt/react-outside-click-hook": "^1.0.6",
+    "@cobalt/react-resize-hook": "^1.0.2",
     "@cobalt/react-tab": "^1.1.7",
     "@cobalt/react-theme-provider": "^2.1.4",
     "@cobalt/react-typography": "^1.4.1",
