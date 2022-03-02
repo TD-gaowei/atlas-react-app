@@ -49,6 +49,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weigaosS/atlas-react-app.git"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
